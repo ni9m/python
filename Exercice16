@@ -1,0 +1,11 @@
+mot1 = input("Ecrire un mot :")
+mot2 = input("Ecrire un deuxième mot :")
+
+def distance_hamming(mot1, mot2):
+  inc = 0
+  for i in range(len(mot1)):
+    if mot1[i] != mot2[i]:
+      inc += 1
+  return inc
+
+print(distance_hamming(mot1, mot2))
