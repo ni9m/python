@@ -1,0 +1,11 @@
+mot = input("Saisir un mot :")
+
+def palindrome(mot):
+    motretourne = mot[::-1] #retourne le mot saisi en ligne 1, exemple : bonjour deviens ruojnob
+    if motretourne == mot:
+        msg = "C'est un palindrome"
+    else:
+        msg = "Ce n'est pas un palindrome"
+    return msg
+
+print(palindrome(mot))
